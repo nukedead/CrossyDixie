@@ -46,9 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CarMovement.cs" />
-     <Compile Include="Assets\HealthLives.cs" />
-     <Compile Include="Assets\PlayersMovements.cs" />
+     <Compile Include="Assets\Scripts\CarMovement.cs" />
+     <Compile Include="Assets\Scripts\HealthLives.cs" />
+     <Compile Include="Assets\Scripts\PlayersMovements.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
