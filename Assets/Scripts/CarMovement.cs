@@ -27,6 +27,6 @@ public class CarMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		rb.AddForce (20,0,0);
+		rb.AddForce (20 * Time.deltaTime,0,0 );
 	}
 }
