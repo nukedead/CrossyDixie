@@ -3,26 +3,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveExtra : MonoBehaviour
+public class Mover : MonoBehaviour
 {
-    public float rush;
 
-    Rigidbody rb;
+    float a = 10f;
 
-    void Awake()
+    void Start()
     {
-        rb = GetComponent<Rigidbody>();
     }
 
-
-    void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
 
-        float MomivientoHorizontal = Input.GetAxis("Horizontal");
-        float MovimientoVertical = Input.GetAxis("Vertical");
-        Vector3 Move = new Vector3(MomivientoHorizontal, 0.0f, MovimientoVertical);
-        rb.AddForce(Move * -rush * Time.deltaTime);
-
+        Move();
     }
-
+    
+    void Move()
+    {
+        if (Input.GetKey(KeyCode.W))
+            transform.Translate(Vector3.forward * a * Time.deltaTime);
+        else if (Input.GetKey(KeyCode.S))
+            transform.Translate(Vector3.back * a * Time.deltaTime);
+        else if (Input.GetKey(KeyCode.D))
+            transform.Translate(Vector3.right * a * Time.deltaTime);
+        else if (Input.GetKey(KeyCode.A))
+            transform.Translate(Vector3.left * a * Time.deltaTime);
+    }
 }
