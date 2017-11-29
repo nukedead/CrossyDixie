@@ -5,16 +5,24 @@ using UnityEngine;
 public class CarMovement : MonoBehaviour {
 
 
-    public GameObject car;
-    public Vector3 Pos;
+  //  public GameObject car;
+    public Rigidbody rb;
+    public Vector3 position = new Vector3();
 
 
 	// Use this for initialization
 	void Start () {
      
-            Instantiate(car);
-           
-       
+            Instantiate(rb);
+      
+        if (rb.transform.position.x >140)
+        {
+            Destroy(rb);
+        }
+        else
+        {
+            Update();
+        }
     }
 	
 	// Update is called once per frame
