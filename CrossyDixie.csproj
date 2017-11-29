@@ -219,10 +219,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Bounce.cs" />
     <Compile Include="Assets\CarMovement.cs" />
     <Compile Include="Assets\HealthLives.cs" />
+    <Compile Include="Assets\Mover.cs" />
     <Compile Include="Assets\OpcionesMenu.cs" />
-    <Compile Include="Assets\PlayersMovements.cs" />
     <Compile Include="Assets\RotateEscenario.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
