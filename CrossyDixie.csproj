@@ -229,6 +229,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CarMovement.cs" />
+    <Compile Include="Assets\Scripts\Collide.cs" />
     <Compile Include="Assets\Scripts\HealthLives.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
