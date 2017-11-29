@@ -1,0 +1,13 @@
+
+Library/metadata/00/00000000000000001000000000000000
+Temp/
+Library/
+Obj/
+ 
+ *.csproj
+ *.unityproj
+ *.sln
+ *.user
+ *.userprefs
+ *.DS_store
+ *.info
